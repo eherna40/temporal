@@ -1,0 +1,22 @@
+.map-container{
+    transform: scale(3);
+    animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+}
+
+
+.map-container.inside{
+
+    animation-name: mapInside;
+    animation-duration: 1s;
+    animation-timing-function:cubic-bezier(.42, 0, .58, 1);
+
+
+    animation-fill-mode: forwards;
+
+}
+
+
+@keyframes mapInside {
+    from {   transform: scale(3);}
+    to {   transform: scale(.7);}
+  }

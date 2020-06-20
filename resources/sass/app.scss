@@ -1,0 +1,71 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+body{
+    font-family: 'HK Grotesk';
+}
+.container-login{
+    background-image: url('../../public/assets/img/background.login.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.boxed::after{
+    content: '';
+    filter: blur(1);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: rgba(255,255,255,.4);
+    z-index: 0;
+}
+
+.box-login{
+    div.title-login {
+        position: relative;
+        z-index: 2;
+        div.content-border{
+            color: white;
+            font-weight: 600;
+            font-size: 30px;
+            border-bottom: 2px solid $principalred;
+        }
+
+    }
+    form{
+        position: relative;
+        z-index: 2;
+        label {
+            color: white;
+            font-weight: 100;
+            font-size: 12px;
+        }
+        .image-input{
+            bottom: 7px;
+            left: 10px;
+        }
+        input{
+            border: 1px solid $principalred;
+            padding-left: 35px;
+        }
+        .btn-principal{
+            background-color: $principalred;
+            border-radius: 0;
+            color: white;
+        }
+    }
+
+    .boxed-button{
+        font-size: 20px;
+    }
+}
